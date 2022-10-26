@@ -1,0 +1,42 @@
+#prvi {
+    color:DarkTurquoise;
+    background-color: blueviolet;
+    opacity:50%
+
+}
+#drugi{
+    color: rgb(0, 206, 209);
+    background-color:rgba(0, 100, 50, 0.5);
+}
+#treci{
+    color:#88ced1;
+    background-color:darkkhaki;
+}
+#opacity{
+    opacity:50%;
+}
+
+#rgba{
+    background-color: rgba(22, 197, 22, 0.5);
+}
+#pajapatak11{
+    background-color: rgb(68, 34, 61);
+}
+.tabela{
+    width:100;
+}
+#pajapatak1{
+    background-color: aliceblue;
+}
+#pajapatak2{
+    background-color:hotpink;
+}
+#pajapatak3{
+    background-color: #41a334;
+}
+#pajapatak4{
+    background-color:aqua;
+}
+#pajapatak5{
+    background-color:yellowgreen;
+}
