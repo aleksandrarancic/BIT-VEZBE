@@ -1,0 +1,92 @@
+#prvalista{
+    list-style-type: circle;
+}
+#drugalista{
+    list-style-type: square;
+}
+
+#trecalista{
+    list-style-type: upper-alpha;
+}
+
+#cetvratalista{
+    list-style-type: upper-roman;
+    
+}
+
+#petalista{
+    list-style-image:url(./bullseye.png);
+    width: 200px;
+    list-style-position:inside;
+}
+
+#sestalista{
+    list-style-image: url(./-emoji-heart-balloon.png);
+    width:200px;
+    list-style-position:outside;
+}
+.tabela{
+    width: 400px;
+    margin:auto;
+    border-collapse: collapse;
+}
+td{
+    padding: 10px;
+    text-align: center;
+}
+#header{
+    background-color: red;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.odd{
+    background-color: lightgrey;
+}
+tr:hover{
+    background-color:rgb(223, 181,67)
+}
+.slika{
+    height: 100px;
+}
+fieldset{
+    width:300px;
+    margin: 50% auto;
+    background-color:burlywood;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-color:coral;
+    text-align: left;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+hr{
+    width: 215px;
+}
+input{
+    width:200px;
+    padding: 5px;
+    border-radius: 10px;
+    border-color:gray;
+
+}
+label{
+    display: block;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+#submit{
+    background-color: red;
+    color: white;
+    width: 210px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#naslov{
+    font-size:x-large;
+    font-family:fantasy;
+    color:black;
+}
+
