@@ -1,0 +1,82 @@
+.prvi{
+    background-color: yellow;
+    height: 300px;
+    width: 500px;
+
+}
+.drugi{
+    background-color: red;
+    width: 600px;
+    height: 300px;
+    
+}
+.prvak{
+    width:400px;
+    height:500px;
+    max-width: 300px;
+
+
+    
+}
+.drugak{
+    width: 600px;
+    height: 300px;
+    max-height: 200px;
+}
+.paja{
+    background-color:yellow;
+    border-width: 5px thick;
+    border-style: solid;
+    border-color: red;
+
+}
+
+.miki{
+    background-color: yellow;
+    border-width: 5px thick;
+    border-style: solid;
+    border-color: green;
+}
+
+.mini{
+    background-color: yellow;
+    border-width: 5px thick;
+    border-style: solid;
+    border-color: red;
+}
+
+.daca{
+    background-color: rosybrown;
+    padding: 0px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.patak{
+    background-color: violet;
+    padding: 10px;
+    padding-top: 50px;
+    margin: 10px;
+}
+
+.silja{
+background-color: grey;
+padding: 50px;
+margin: 10px;
+}
+
+.boxshadow{
+    border: 7px solid greenyellow;
+    width: 960px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: aquamarine;
+    color: cornflowerblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 40px;
+}
