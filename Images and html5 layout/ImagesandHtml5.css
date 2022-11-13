@@ -1,0 +1,28 @@
+.jesen{
+    display:block;
+    height:200px;
+    float:right;
+
+}
+.zima{
+    width:200px;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+}
+
+.leto{
+    display: block;
+    height: 200px;
+    width:200px;
+    float:left;
+}
+body{
+    background-image: url(./jesen.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-size:cover;
+    background-color: black;
+}
