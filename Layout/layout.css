@@ -1,0 +1,28 @@
+.header1{
+    color: rgb(138, 10, 10);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+.slika1{
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin-bottom: 30px;
+}
+.slika2{
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.slika3{
+    position: fixed;
+    bottom: 0px;
+    right:100px;
+    left: 50px;
+}
+.linktop{
+    position: fixed;
+    right: 10px;
+    bottom: 40px;
+}
