@@ -1,0 +1,11 @@
+{
+  "name": "alxndr-lrn",
+  "version": "2.0.0",
+  "description": "Pravljenje sajta od nule kao zadatak",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksandra Rancic",
+  "license": "ISC"
+}
