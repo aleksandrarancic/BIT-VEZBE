@@ -113,7 +113,7 @@ console.log(whoCursedMost([
     {Me: 10, Spouse:5},
     {Me: 5, Spouse:10},
     {Me: 10, Spouse:10}
-]))
+]));
 
 
 

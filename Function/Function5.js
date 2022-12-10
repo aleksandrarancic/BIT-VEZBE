@@ -22,7 +22,11 @@ function findMinMaxArray(input) {
     input[indexMin] = maximum;
     input[indexMax] = c;
     console.log(input);
+<<<<<<< HEAD
 }
+=======
+}@
+>>>>>>> e070c8a1a0cb350b8d2e16c99b265c1291640eb3
 
 var niz = [ 3, 500, 12, 149, 53, 414, 1, 19 ];
 findMinMaxArray(niz);
