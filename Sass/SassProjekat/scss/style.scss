@@ -1,0 +1,698 @@
+@import './colors.scss';
+@import './mixins.scss';
+@import './fonts.scss';
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url('/fonts/Roboto-Regular.ttf');
+  }
+  
+  @font-face {
+    font-family: RobotoBold;
+    src: url('/fonts/Roboto-Bold.ttf');
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    font-size: 100%;
+    font-family: RobotoRegular;
+  }
+  
+  /* ========================== COMMON ==========================  */
+  
+  .card {
+    margin: 50px;
+    box-sizing: border-box;
+    display: block;
+    width: 95%;
+    height: 300px;
+    background-color:$address-blue;
+    /* padding: 400px; */
+  }
+  
+  .card-main {
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+  }
+  
+  .card-main img {
+    border-color:$color-white;
+    padding: 3px;
+    box-sizing: border-box;
+    display: block;
+    height: 96px;
+    max-width: 100%;
+    width: 96px;
+    border-radius: 9999px;
+    margin: 20px;
+    margin-bottom: 10px;
+  
+  }
+  
+  .card-main h3 {
+    color:$color-black;
+    font-size: x-large;
+    font-family: RobotoBold;
+    text-transform: uppercase;
+  }
+  
+  .card-body {
+    font-family: RobotoBold;
+    box-sizing: border-box;
+    display: block;
+    padding: 0 30px;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    color:$color-white;
+  }
+  
+  .card-main .checked {
+    padding-top: 10px;
+    font-size: 20px;
+    color:$color-white;
+  }
+  
+  section.row {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  section.row>div {
+    float: left;
+  }
+  
+  .fit-image {
+    @include widPd(95px,100);
+    object-fit: contain;
+  }
+  
+  section {
+    margin-bottom: 80px;
+  }
+  
+  section h1 {
+    font-family: RobotoRegular;
+    font-size: 3.0em;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+  
+  section h2 {
+    font-size: 2.0em;
+    color:$color-txt;
+    padding-bottom: 50px;
+  }
+  
+  .quote {
+    font-size: 1.5em;
+    color: #646065;
+  }
+  
+  section.row {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  .ul-yellow-arrow ul {
+    color: #646065;
+    margin-top: 40px;
+    margin-left: 50px;
+    list-style-image: url('/images/arrow_bullet.png');
+  }
+  
+  .ul-yellow-arrow li {
+    font-size: 1.5em;
+    padding-bottom: 30px;
+  }
+  .line-square-line{
+    width:100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .line{
+    display: inline-block;
+    height: 20px;
+    width: 40px;
+    border-top: 2px solid;
+    border-color:$color-black;
+  }
+  
+  .square{
+    display: inline-block;
+    width: 20px;
+    min-height: 20px;
+    border: 2px solid;
+    border-color:$color-black;
+    margin: 0px 5px;
+    transform: rotate(45deg);
+    position: relative;
+    top: -9px;
+  }
+  
+  .wrapp {
+    min-height: 100%;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* border: red 1px solid; */
+    /* height: 3300px !important; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-size: 100% 100%; */
+    /* background-image: url("/images/final-target/alex_phone.png"); */
+    /* background-image: url("/images/final-target/alex_tablet.png"); */
+    /* background-image: url("/images/final-target/alex_desktop.png"); */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  }
+  
+  /* ========================== HEADER ==========================  */
+  header {
+    background: transparent;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* opacity: 0; */
+    /* opacity: 0.5; */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  
+  }
+  
+  /* ---------------------------- logo text ------------------------------- */
+  .headTitle {
+    width: 320px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    line-height: 2.8rem;
+    font-family: RobotoBold;
+    font-size: 2.8rem;
+    font-weight: 900;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* opacity: 0; */
+    /* opacity: 0.5; */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  }
+  
+  #naslovlevo {
+    color:$color-orange;
+    border: 5px solid rgb(118, 118, 118);
+    border-right: none;
+    padding-left: 10px;
+  }
+  
+  #naslovdesno {
+    color: rgb(118, 118, 118);
+    margin-left: 1.3rem;
+  }
+  
+  /* ------------------------ navigacija ------------------------------- */
+  header>nav {
+    text-align: center;
+    font-family: RobotoBold;
+    color: #EBEBEE;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 900;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* opacity: 0; */
+    /* opacity: 0.5; */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  }
+  
+  header>nav>ul {
+    background-color:$address-blue;
+    margin: 0;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    /* padding-bottom: 30px; */
+  }
+  
+  header>nav>ul>li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  
+  }
+  
+  header>nav>ul>li:hover {
+    color: black;
+    background-color: #9cc9ee;
+  }
+  
+  
+  
+  /* ========================== MAIN ==========================  */
+  main {
+    min-height: 100vh;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* background-color: aqua; */
+    /* opacity: 0; */
+    /* opacity: 0.5; */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  }
+  
+  /* ------------------------ section read more ------------------------------- */
+  .sectionReadMore {
+    position: relative;
+    text-align: center;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* opacity: 0; */
+    /* opacity: 0.5; */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  }
+  
+  .sectionReadMore>div {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sectionReadMore h1 {
+    margin: auto;
+    text-align: center;
+    color:$color-white;
+    font-family: RobotoBold;
+    font-size: 2.0rem;
+    font-weight: 900;
+    padding-top: 25px;
+    padding-bottom: 30px;
+    opacity: 0.7;
+  }
+  
+  .sectionReadMore button {
+    color:$color-white;
+    border-radius: 20px;
+    background-color:$button-background;
+    padding: 8px 30px;
+    font-size: 1.5rem;
+    box-shadow: none;
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    opacity: 0.7;
+  }
+  
+  .sectionReadMore button:hover {
+    background-color:$address-blue;
+  }
+  
+  /* ------------------------ section what people says ------------------------------- */
+  /* sectionWhatPplSays */
+  .sectionWhatPplSays {
+    display: 1;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* opacity: 0; */
+    /* opacity: 0.5; */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  }
+  
+  /* ------------------------ section get in touch ------------------------------- */
+  .sectionGetIntTouch {
+    display: 1;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* opacity: 0; */
+    /* opacity: 0.5; */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  }
+  
+  .tab-center {
+    height: 200px;
+    position: relative;
+    text-align: center;
+    color:$color-white;
+  }
+  
+  .tab-center img {
+    background-color: transparent;
+  }
+  
+  .tab-center>div {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .tab-image {
+    background-color: aqua;
+  }
+  
+  /* ------------------------ section mail us ------------------------------- */
+  .sectionMailUs {
+    display: 1;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* opacity: 0; */
+    /* opacity: 0.5; */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  }
+  
+  .sectionMailUs input {
+    @include wiMar (100%,5px);
+    min-height: 30px;
+  }
+  
+  .sectionMailUs textarea {
+    @include wiMar (100%,5px);
+  }
+  
+  #btn-contact-us {
+    width: 100px;
+    background-color: orange;
+    border: orange;
+  }
+  
+  .pad20r {
+    padding: 20px;
+  }
+  
+  /* ========================== FOOTER ==========================  */
+  footer {
+    background-color:$color-black;
+    color:$color-white;
+    text-align: center;
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+    /* DEVELOPMENT ONLY */
+    /* opacity: 0; */
+    /* opacity: 0.5; */
+    /* ..._......_......_......_......_......_......_......_......_......_......_..... */
+  }
+  
+  footer a {
+    color: $logo-border;
+    text-decoration: none;
+    padding-left: 30px;
+  }
+  
+  footer>* {
+    padding: 10px;
+  }
+  
+  
+  /* ========================== MEDIA QUERIES ==========================  */
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  .col-xs-6 {
+    width: 50%;
+  }
+  
+  /* [class*="col-"]>* {
+    padding: 10px;
+  } */
+  
+  /* For tablets and desktops*/
+  @media only screen and (min-width: 768px) {
+  
+    /* ---------------------------- logo text ------------------------------- */
+    .headTitle {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1000;
+      padding-left: 25px;
+      padding-top: 25px;
+      opacity: 0.5;
+      font-size: 1.8rem;
+    }
+  
+    #naslovlevo {
+      color: $color-black;
+      border: 5px solid rgb(255, 255, 255);
+      border-right: 5px solid transparent;
+    }
+  
+    #naslovdesno {
+      color: rgb(255, 255, 255);
+  
+    }
+  
+    /* ------------------------ navigacija ------------------------------- */
+    header>nav {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1000;
+    }
+  
+    header>nav>ul {
+      background-color: transparent;
+      font-size: 0.6em;
+    }
+  
+    header>nav>ul>li {
+      display: block;
+      float: left;
+      padding: 30px 5px 10px 5px;
+      color: #9FB6C8;
+    }
+  
+    header>nav>ul>li:hover {
+      color: #b8cedf;
+      background-color: transparent;
+    }
+  
+    /* ------------------------ section read more ------------------------------- */
+    .readMore h1 {
+      font-size: 2.0rem;
+    }
+  
+    .readMore button {
+      font-size: 1.7rem;
+    }
+  }
+  
+  
+  /* For tablets: */
+  @media only screen and (min-width: 768px) {
+  
+    .col-s-1 {
+      width: 8.33%;
+      max-width: 8.33%;
+    }
+  
+    .col-s-2 {
+      width: 16.66%;
+      max-width: 16.66%;
+    }
+  
+    .col-s-3 {
+      width: 25%;
+      max-width: 25%;
+    }
+  
+    .col-s-4 {
+      width: 33.33%;
+      max-width: 33.33%;
+    }
+  
+    .col-s-5 {
+      width: 41.66%;
+      max-width: 41.66%;
+    }
+  
+    .col-s-6 {
+      width: 50%;
+      max-width: 50%;
+    }
+  
+    .col-s-7 {
+      width: 58.33%;
+      max-width: 58.33%;
+    }
+  
+    .col-s-8 {
+      width: 66.66%;
+      max-width: 66.66%;
+    }
+  
+    .col-s-9 {
+      width: 75%;
+      max-width: 75%;
+    }
+  
+    .col-s-10 {
+      width: 83.33%;
+      max-width: 83.33%;
+    }
+  
+    .col-s-11 {
+      width: 91.66%;
+      max-width: 91.66%;
+    }
+  
+    .col-s-12 {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  /* For desktop: */
+  @media only screen and (min-width: 1200px) {
+    .col-m-1 {
+      width: 8.33%;
+      max-width: 8.33%;
+    }
+  
+    .col-m-2 {
+      width: 16.66%;
+      max-width: 16.66%;
+    }
+  
+    .col-m-3 {
+      width: 25%;
+      max-width: 25%;
+    }
+  
+    .col-m-4 {
+      width: 33.33%;
+      max-width: 33.33%;
+    }
+  
+    .col-m-5 {
+      width: 41.66%;
+      max-width: 41.66%;
+    }
+  
+    .col-m-6 {
+      width: 50%;
+      max-width: 50%;
+    }
+  
+    .col-m-7 {
+      width: 58.33%;
+      max-width: 58.33%;
+    }
+  
+    .col-m-8 {
+      width: 66.66%;
+      max-width: 66.66%;
+    }
+  
+    .col-m-9 {
+      width: 75%;
+      max-width: 75%;
+    }
+  
+    .col-m-10 {
+      width: 83.33%;
+      max-width: 83.33%;
+    }
+  
+    .col-m-11 {
+      width: 91.66%;
+      max-width: 91.66%;
+    }
+  
+    .col-m-12 {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+  
+  
+  
+  
+  /* TODO srediti */
+  
+  #get {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+  }
+  
+  #th1 {
+    background-color:$contact-green;
+    @include heWi(200,300);
+    color: white;
+  }
+  
+  #th2 {
+    background-color: rgb(233, 145, 211);
+    @include heWi(200,300);
+    color: white;
+  }
+  
+  #th3 {
+    background-color: rgb(145, 146, 233);
+    @include heWi(200,300);
+    color: white;
+  }
+  
+  #th4 {
+    background-color: rgb(145, 220, 233);
+    @include heWi(200,300);
+  }
+  
+  #house {
+    @include heWi(200,300);
+  }
+  
+  #tabelaa {
+    border-spacing: 0px;
+    margin: 30px;
+  
+  }
+  
+  #phone {
+    height: 30px;
+    cursor: pointer;
+    color:$color-white;
+    background-color: transparent;
+    background: transparent;
+  }
+  
+  #fb {
+    height: 40px;
+    cursor: pointer;
+    color:$color-white;
+    background-color: transparent;
+  
+  }
+  
+  #mail {
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  #ig {
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  #linkedin {
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  #twi {
+    height: 40px;
+    cursor: pointer;
+  
+  }

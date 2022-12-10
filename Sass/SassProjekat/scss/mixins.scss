@@ -1,0 +1,9 @@
+@mixin widPd($wid,$pad){
+    width:$wid;
+    padding:$pad;
+}
+
+@mixin heWi($he,$wi){
+    height:$he;
+    width: $wi;
+}
