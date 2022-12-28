@@ -1,0 +1,29 @@
+.header-container{
+    background-color:$main-color;
+    color: $text-color;
+}
+
+h1{
+    padding-top: 15px;
+    font-size: 45px;
+}
+
+nav {
+    background-color: $blue-color;
+    .container {
+        padding: 6px 0;
+    }
+    .navbar-brand {
+        font-weight: bold;
+    }
+    button {
+        background-color: $main-color!important;
+    }
+}
+
+.nav-link{
+    color: white!important;
+    &:hover{
+        color:grey!important;
+    }
+}
