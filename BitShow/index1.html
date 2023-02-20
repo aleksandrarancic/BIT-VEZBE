@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Show Info</title>
+  </head>
+
+  <body>
+    <div class="container-fluid p-0">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="./index.html" target="_self">BitShow</a>
+
+          <form class="d-flex" autocomplete="off" onsubmit="return false;">
+            <div class="suggestions"></div>
+
+            <input
+              class="form-control search-show"
+              id="search-show"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container d-flex justify-content-center">
+      <div class="showTitle"></div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col posterImg"></div>
+        <div class="col">
+          <h3>Seasons <span class="numOfSeasons"></span></h3>
+          <ul class="seasons"></ul>
+
+          <h3>Cast</h3>
+          <ul class="cast"></ul>
+
+          <h3>Crew</h3>
+          <ul class="crew"></ul>
+        </div>
+
+        <div class="row">
+          <h3>Show Details</h3>
+          <div class="showDetails"></div>
+        </div>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+      <svg
+        xmlns="https://www.w3.org/2000/svg"
+        width="50"
+        height="50"
+        fill="currentColor"
+        class="bi bi-arrow-up-circle-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"
+        />
+      </svg>
+    </button>
+
+    <footer>
+      <!-- Copyright -->
+      <div class="text-center p-2 footer fixed-bottom">
+        Copyright © Bit Student 2023
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <script src="./js/backTo.js" defer></script>
+
+    <script src="./js/info.js" defer></script>
+  </body>
+</html>
